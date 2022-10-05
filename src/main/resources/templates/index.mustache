@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Welcome</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div>
+    <a href="/create">Create one</a>
+</div>
+
+<p>List of collections:</p>
+
+<form method="post" action="filter">
+    <input type="text" name="filter">
+    <button type="submit">Find</button>
+</form>
+
+{{#collections}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{name}}</span>
+        <i>{{description}}</i>
+    </div>
+{{/collections}}
+
+</body>
+</html>
